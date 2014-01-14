@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <Button 
+        android:id="@+id/hide_or_show_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="--- HIDE OR SHOW --"
+        android:layout_gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/excercise_add_view_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/muscleGroupSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excercise"
+                android:textColor="@color/main_text_color" />
+
+            <EditText
+                android:id="@+id/etSQLExcercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+            
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of sets"
+                android:textColor="@color/main_text_color" />
+
+            <EditText
+                android:id="@+id/etSQLSets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of repetitions"
+                android:textColor="@color/main_text_color" />
+
+            <EditText
+                android:id="@+id/etSQLReps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/bSQLupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/knapp"
+                android:text="Create" />
+        </LinearLayout>
+    </ScrollView>
+    
+        <ListView 
+        android:id="@+id/ex_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

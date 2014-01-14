@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_background_color"
+    >
+
+    <Button
+        android:id="@+id/bScheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knapp"
+        android:text="Schedule" />
+
+    <Button
+        android:id="@+id/bCalender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knapp"
+        android:text="Calender" />
+
+    <Button
+        android:id="@+id/bVadNuDenSistaHeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/knapp"
+        android:text="Excersis" />
+
+    <Button
+        android:id="@+id/bHandleSchemes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hantera scheman" 
+        android:background="@drawable/knapp"/>
+
+</LinearLayout>
